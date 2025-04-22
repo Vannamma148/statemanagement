@@ -1,0 +1,168 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+input[type="text"]{
+  padding: 1rem;
+  margin: 1rem;
+}
+
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+caption{
+  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.colorpicker{
+  height: 500px;
+  width: 500px;
+  border-radius: 22px;
+  margin:1rem  auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a{
+  color: white;
+  font-size: 1.6rem;
+  margin: 1rem;
+  text-decoration: underline;
+  margin: 2rem ;
+}
+
+/* Style the select dropdown */
+select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+/* Add hover effect */
+select:hover {
+  border-color: #888;
+}
+
+/* Style for option elements */
+option {
+  padding: 10px;
+  background-color: white;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Highlight selected option */
+select:focus {
+  outline: none;
+  border-color: #4d90fe;
+}
+
+/* Add a custom arrow icon to the dropdown */
+select::-ms-expand {
+  display: none;
+}
+
+/* Optional: Custom style for the dropdown when it's open */
+select:active {
+  background-color: #f4f4f4;
+}
+
+/* Add some styling for a container (optional) */
+.select-container {
+  margin: 20px;
+}
